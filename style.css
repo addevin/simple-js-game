@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gameWindow{
+    width: 700px;
+    height: 300px;
+    background-color: aliceblue;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    color: black;
+}
+#character{
+    position: absolute;
+    top: 250px;
+    height: 60px;
+    width: 30px;
+    /* background-color: blueviolet; */
+}
+#character img{
+    width: 100%;
+    margin-top: 10px;
+}
+.jumb{
+    animation: jumbAnim 500ms infinite;
+}
+#obj1{
+    /* background-color: black; */
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 700px;
+}
+#obj1 img{
+    width: 100%;
+}
+@keyframes objAnim {
+    0%{left: 710px;}
+    100%{left: -50px;}
+}
+@keyframes jumbAnim {
+    0%{top: 250px;}
+    30%{top: 180px;}
+    70%{top: 180px;}
+    100%{top: 250px;}
+}
+#mssg{
+    color: white;
+    background-color: rgb(255, 100, 100);
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+}
+.gameFinalMessage{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#resetBTN{
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    margin: auto;
+    background-color: rgb(169, 169, 255);
+    border: 1px solid rgb(127, 127, 255);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#resetBTN:hover{
+    
+    background-color: rgb(135, 135, 249);
+    border: 1px solid rgb(108, 108, 246);
+}
+#welcome h2{
+    color: rgb(55, 100, 128);
+}
+#welcome p{
+    color: rgb(33, 129, 129);
+}
+#gHead{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+}
+#gHead h3{
+    margin: 0;
+    color: rgb(55, 100, 128);
+
+}
+#gHead p{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+.scoregroup2{
+    background-color: rgb(209, 253, 220);
+    padding: 10px;
+    display: none;
+}
+.scoregroup2 p{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+}
+.copy{
+    background-color: white;
+    color: gray;
+    font-size: 11px;
+}
